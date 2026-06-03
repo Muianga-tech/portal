@@ -105,8 +105,9 @@ loginForm.addEventListener('submit', (e) => {
         alert(`Bem-vindo, ${usuarioValido.name}!`);
         
         // Manda direto para o painel de informática
-        window.location.href = "https://muianga-tech.github.io/portal/teoria/index.html";
- else {
+        window.location.href = "teoria/index.html";
+
+        else {
         alert("Erro: E-mail ou Senha incorretos! Tente novamente.");
     }
 });
