@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>António Eduardo Muianga | Portal de Informática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <span class="tech-icon">&lt;/&gt;</span> MuiangaTech
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#modulos">Conteúdo dos Módulos</a></li>
+                    <li><a href="#dicionario">Dicionário</a></li>
+                    <li><a href="#quiz">Testar Conhecimento</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+<section id="inicio" class="hero-section container">
+    <div class="hero-flex-container">
+        
+        <div class="hero-conteudo">
+            <h1>António Eduardo Muianga</h1>
+            <p class="subtitulo">Formador Júnior</p>
+            <p class="descricao-breve">Capacitando cidadãos através da inclusão digital, lógica de programação e domínio das tecnologias de informação.</p>
+            <a href="#modulos" class="btn-principal">Estudar Módulos</a>
+        </div>
+        
+        <div class="hero-foto-container">
+            <img src="./img/perfil.jpg" alt="Foto de António Eduardo Muianga" class="foto-perfil">
+        </div>
+        
+    </div>
+</section>
+
+    <section id="modulos" class="container secao-espaco">
+        <div class="titulo-secao">
+            <h2>Centro de Aprendizagem Digital</h2>
+            <p>Clica num dos módulos abaixo para abrir as lições completas preparadas pelo Formador.</p>
+        </div>
+        
+        <div class="abas-navegacao">
+            <button class="aba-btn ativa" onclick="abrirModulo(event, 'mod-hardware')">💻 Hardware</button>
+            <button class="aba-btn" onclick="abrirModulo(event, 'mod-redes')">🌐 Redes</button>
+            <button class="aba-btn" onclick="abrirModulo(event, 'mod-office')">📊 Office</button>
+            <button class="aba-btn" onclick="abrirModulo(event, 'mod-logica')">🚀 Programação</button>
+        </div>
+
+        <div id="mod-hardware" class="aba-conteudo conteudo-ativo">
+            <h3>Módulo 1: Arquitetura e Manutenção de Computadores</h3>
+            <p class="intro-liçao">Neste módulo, vais compreender como funciona o ecossistema físico de um computador e como diagnosticar problemas.</p>
+            
+            <div class="licao-bloco">
+                <h4>1.1 O Ciclo de Processamento de Dados</h4>
+                <p>Qualquer computador opera com base em três etapas fundamentais: <strong>Entrada</strong> (via teclado, rato), <strong>Processamento</strong> (efetuado pela CPU e apoiado pela Memória RAM) e <strong>Saída</strong> (exibido no monitor ou impressora).</p>
+            </div>
+            <div class="licao-bloco">
+                <h4>1.2 Componentes Críticos</h4>
+                <ul>
+                    <li><strong>Motherboard (Placa-Mãe):</strong> Onde todos os componentes se conectam elatricamente.</li>
+                    <li><strong>Processador (CPU):</strong> Onde ocorrem os cálculos aritméticos e lógicos. Mede-se em Gigahertz (GHz).</li>
+                    <li><strong>Armazenamento (SSD vs HDD):</strong> Os HDDs utilizam discos mecânicos lentos; os SSDs usam chips de memória flash eletrónica, sendo até 10 vezes mais rápidos para iniciar o sistema.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="mod-redes" class="aba-conteudo">
+            <h3>Módulo 2: Fundamentos de Redes & Internet</h3>
+            <p class="intro-liçao">Aprende como os computadores conversam entre si e como a informação viaja pelo mundo.</p>
+            
+            <div class="licao-bloco">
+                <h4>2.1 O que é uma Rede de Computadores?</h4>
+                <p>É um conjunto de dispositivos interconectados que partilham recursos, dados e serviços (como impressoras ou acesso à Internet).</p>
+            </div>
+            <div class="licao-bloco">
+                <h4>2.2 Tipos de Redes Geográficas</h4>
+                <ul>
+                    <li><strong>LAN (Local Area Network):</strong> Rede local de curto alcance, usada em salas de aula, escritórios ou residências.</li>
+                    <li><strong>WAN (Wide Area Network):</strong> Rede de longa distância que interliga cidades ou países. A Internet é a maior WAN do planeta.</li>
+                </ul>
+            </div>
+            <div class="licao-bloco">
+                <h4>2.3 Equipamentos Essenciais</h4>
+                <p>O <strong>Switch</strong> conecta dispositivos dentro da mesma rede local, enquanto o <strong>Router (Roteador)</strong> conecta redes diferentes e encaminha os dados para a Internet.</p>
+            </div>
+        </div>
+
+        <div id="mod-office" class="aba-conteudo">
+            <h3>Módulo 3: Produtividade com o Pacote Microsoft Office</h3>
+            <p class="intro-liçao">Domina as ferramentas indispensáveis para o mercado corporativo e administrativo.</p>
+            
+            <div class="licao-bloco">
+                <h4>3.1 Microsoft Word (Processador de Texto)</h4>
+                <p>Focado na criação de documentos profissionais, relatórios, cartas formais e currículos baseados nas normas académicas de formatação de texto.</p>
+            </div>
+            <div class="licao-bloco">
+                <h4>3.2 Microsoft Excel (Folhas de Cálculo)</h4>
+                <p>Ferramenta matemática avançada para gestão de orçamentos e relatórios financeiros. Essencial dominar:</p>
+                <ul>
+                    <li><strong>Fórmulas Básicas:</strong> SUM (Soma), AVERAGE (Média), COUNT (Contagem).</li>
+                    <li><strong>Funções Lógicas:</strong> A função <code>IF</code> (SE) para tomadas de decisão automatizadas nas células.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="mod-logica" class="aba-conteudo">
+            <h3>Módulo 4: Lógica de Programação e Algoritmos</h3>
+            <p class="intro-liçao">Desenvolve o teu raciocínio lógico para criar softwares, aplicações e páginas Web.</p>
+            
+            <div class="licao-bloco">
+                <h4>4.1 O que é um Algoritmo?</h4>
+                <p>Um algoritmo é uma sequência passo a passo de instruções finitas e lógicas para resolver um problema específico. Uma receita de cozinha, por exemplo, é um algoritmo.</p>
+            </div>
+            <div class="licao-bloco">
+                <h4>4.2 Estruturas de Controle</h4>
+                <p>Na programação, controlamos o fluxo do código usando condições:</p>
+                <pre>SE (nota >= 10) ENTÃO
+    Escrever("Aluno Aprovado")
+SENÃO
+    Escrever("Aluno Reprovado")
+FIM_SE</pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="dicionario" class="container secao-espaco">
+        <div class="cartao-conteudo">
+            <h2>Dicionário Técnico de Informática</h2>
+            <p class="sub-texto-tabela">Guia rápido de conceitos para consulta rápida dos estudantes:</p>
+            
+            <div class="tabela-responsiva">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Termo</th>
+                            <th>Significado / Função</th>
+                            <th>Categoria</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>CPU</strong></td>
+                            <td>Unidade Central de Processamento. Executa as instruções dos programas.</td>
+                            <td><span class="tag tag-hw">Hardware</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Memória RAM</strong></td>
+                            <td>Memória volátil de leitura e escrita rápida que apoia o processador.</td>
+                            <td><span class="tag tag-hw">Hardware</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sistema Operativo</strong></td>
+                            <td>Software base que faz a ponte entre o utilizador e os componentes físicos.</td>
+                            <td><span class="tag tag-sw">Software</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>IP (Endereço)</strong></td>
+                            <td>Protocolo de Internet que identifica um dispositivo numa rede local ou global.</td>
+                            <td><span class="tag tag-net">Redes</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="quiz" class="container secao-espaco">
+        <div class="cartao-conteudo">
+            <h2>Mini-Teste de Diagnóstico (Informática Geral)</h2>
+            <p class="instrucao-quiz">Responda às 5 perguntas abaixo. O sistema calculará a sua nota na escala de 0 a 20 valores.</p>
+            
+            <form id="formulario-quiz" onsubmit="event.preventDefault();">
+                <div class="pergunta-bloco">
+                    <p class="pergunta-texto">1. Qual das seguintes opções é estritamente um componente de Software?</p>
+                    <label class="opcao"><input type="radio" name="p1" value="errado"> Memória RAM</label>
+                    <label class="opcao"><input type="radio" name="p1" value="correto"> Microsoft Excel</label>
+                    <label class="opcao"><input type="radio" name="p1" value="errado"> Disco SSD</label>
+                </div>
+
+                <div class="pergunta-bloco">
+                    <p class="pergunta-texto">2. O que acontece com os dados gravados na memória RAM quando o computador é desligado?</p>
+                    <label class="opcao"><input type="radio" name="p2" value="errado"> São guardados permanentemente</label>
+                    <label class="opcao"><input type="radio" name="p2" value="correto"> São totalmente apagados (memória volátil)</label>
+                    <label class="opcao"><input type="radio" name="p2" value="errado"> São transferidos para a Internet</label>
+                </div>
+
+                <div class="pergunta-bloco">
+                    <p class="pergunta-texto">3. Qual é a principal função de um Dispositivo de Armazenamento como o SSD?</p>
+                    <label class="opcao"><input type="radio" name="p3" value="correto"> Guardar ficheiros e o sistema de forma permanente</label>
+                    <label class="opcao"><input type="radio" name="p3" value="errado"> Aumentar a velocidade da internet</label>
+                    <label class="opcao"><input type="radio" name="p3" value="errado"> Resfriar o aquecimento do processador</label>
+                </div>
+
+                <div class="pergunta-bloco">
+                    <p class="pergunta-texto">4. Assinale o dispositivo que é considerado exclusivamente de ENTRADA de dados:</p>
+                    <label class="opcao"><input type="radio" name="p4" value="errado"> Monitor de Vídeo Comum</label>
+                    <label class="opcao"><input type="radio" name="p4" value="errado"> Impressora Jacto de Tinta</label>
+                    <label class="opcao"><input type="radio" name="p4" value="correto"> Teclado USB</label>
+                </div>
+
+                <div class="pergunta-bloco">
+                    <p class="pergunta-texto">5. O que significa a sigla "WWW" usada nos navegadores de internet?</p>
+                    <label class="opcao"><input type="radio" name="p5" value="correto"> World Wide Web</label>
+                    <label class="opcao"><input type="radio" name="p5" value="errado"> Wi-Fi Wireless Word</label>
+                    <label class="opcao"><input type="radio" name="p5" value="errado"> Web Windows Wide</label>
+                </div>
+
+                <button type="button" class="btn-principal" onclick="calcularNota()">Submeter e Avaliar</button>
+            </form>
+            
+            <div id="painel-resultado" class="resultado-oculto">
+                <h3 id="nota-titulo"></h3>
+                <p id="nota-mensagem"></p>
+            </div>
+        </div>
+  <section id="contacto" class="container secao-espaco">
+    <div class="cartao-conteudo">
+        <h2>Contactar António Eduardo Muianga</h2>
+        <p style="margin-bottom: 20px; color:#64748b;">Gostaria de agendar uma mentoria ou formação personalizada? Preencha os dados abaixo:</p>
+        
+        <form class="form-contacto" onsubmit="event.preventDefault();">
+            <div class="campo-grupo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" placeholder="Digite o seu nome" required>
+            </div>
+            <div class="campo-grupo">
+                <label for="email">E-mail ou Telefone:</label>
+                <input type="text" id="email" placeholder="Contacto directo" required>
+            </div>
+            <div class="campo-grupo">
+                <label for="mensagem">Mensagem / Objectivos do Aluno:</label>
+                <textarea id="mensagem" rows="4" placeholder="Escreva aqui o que gostaria de aprender..." required></textarea>
+            </div>
+            <button type="button" class="btn-principal" onclick="enviarParaWhatsApp()">Enviar via WhatsApp</button>
+        </form>
+    </div>
+</section>
+
+
+    <footer>
+        <div class="container">
+            <p><strong>António Eduardo Muianga</strong></p>
+            <p class="cargo-rodape">Formador Júnior</p>
+            <p class="direitos">&copy; 2026 MuiangaTech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Função para controlar a troca de Módulos (Abas)
+        function abrirModulo(evento, nomeModulo) {
+            // Esconde todos os conteúdos das abas
+            const conteudos = document.getElementsByClassName("aba-conteudo");
+            for (let i = 0; i < conteudos.length; i++) {
+                conteudos[i].className = "aba-conteudo";
+            }
+            
+            // Remove a classe "ativa" de todos os botões
+            const botoes = document.getElementsByClassName("aba-btn");
+            for (let i = 0; i < botoes.length; i++) {
+                botoes[i].className = botoes[i].className.replace(" ativa", "");
+            }
+            
+            // Mostra o módulo atual e adiciona classe ativa ao botão clicado
+            document.getElementById(nomeModulo).className += " conteudo-ativo";
+            evento.currentTarget.className += " ativa";
+        }
+
+        // Função para calcular nota do Quiz
+        function calcularNota() {
+            let acertos = 0;
+            const totalPerguntas = 5;
+            
+            const r1 = document.querySelector('input[name="p1"]:checked');
+            const r2 = document.querySelector('input[name="p2"]:checked');
+            const r3 = document.querySelector('input[name="p3"]:checked');
+            const r4 = document.querySelector('input[name="p4"]:checked');
+            const r5 = document.querySelector('input[name="p5"]:checked');
+            
+            if (!r1 || !r2 || !r3 || !r4 || !r5) {
+                alert("Por favor, responda a todas as 5 questões antes de terminar o teste!");
+                return;
+            }
+            
+            if (r1.value === "correto") acertos++;
+            if (r2.value === "correto") acertos++;
+            if (r3.value === "correto") acertos++;
+            if (r4.value === "correto") acertos++;
+            if (r5.value === "correto") acertos++;
+            
+            const notaFinal = (acertos / totalPerguntas) * 20;
+            
+            const painel = document.getElementById("painel-resultado");
+            const titulo = document.getElementById("nota-titulo");
+            const msg = document.getElementById("nota-mensagem");
+            
+            painel.className = "resultado-visivel";
+            titulo.innerHTML = `Nota Final: ${notaFinal.toFixed(1)} Valores`;
+            
+            if (notaFinal >= 10) {
+                painel.style.backgroundColor = "#d1fae5";
+                painel.style.color = "#065f46";
+                painel.style.borderLeft = "6px solid #10b981";
+                msg.innerHTML = `🎉 Excelente resultado! Acertou ${acertos} de 5 perguntas. Está aprovado no diagnóstico básico!`;
+            } else {
+                painel.style.backgroundColor = "#fee2e2";
+                painel.style.color = "#991b1b";
+                painel.style.borderLeft = "6px solid #ef4444";
+                msg.innerHTML = `📚 Nota abaixo da média (Menos de 10 valores). Acertou ${acertos} de 5 perguntas. Hora de rever os materiais didácticos!`;
+            }
+            
+            painel.scrollIntoView({ behavior: 'smooth' });
+        }
+        function enviarParaWhatsApp() {
+    // 1. Introduz o teu número de WhatsApp com o indicativo de Moçambique (258)
+    // Escreve apenas os números, sem espaços nem o sinal +
+    const numeroWhatsApp = "258848411991"; // <-- SUBSTUI PELO TEU NÚMERO AQUI
+
+    // 2. Captura os valores digitados pelo aluno nos campos
+    const nome = document.getElementById('nome').value.trim();
+    const contacto = document.getElementById('email').value.trim();
+    const mensagem = document.getElementById('mensagem').value.trim();
+
+    // 3. Validação básica para garantir que nenhum campo vai vazio
+    if (nome === "" || contacto === "" || mensagem === "") {
+        alert("Por favor, preencha todos os campos antes de enviar!");
+        return;
+    }
+
+    // 4. Organiza o texto que vai chegar no teu WhatsApp de forma bonita
+    // Usamos o '%0A' para fazer a quebra de linha (Enter) no WhatsApp
+    const textoFormatado = 
+        `👋 *Nova Solicitação de Formação - MuiangaTech*` + `%0A%0A` +
+        `👤 *Nome:* ${nome}` + `%0A` +
+        `📞 *Contacto:* ${contacto}` + `%0A%0A` +
+        `📝 *Mensagem/Objectivos:*` + `%0A` + `${mensagem}`;
+
+    // 5. Cria a URL final para abrir o WhatsApp
+    const urlFinal = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${textoFormatado}`;
+
+    // 6. Abre o WhatsApp numa nova aba ou diretamente na aplicação do telemóvel
+    window.open(urlFinal, '_blank');
+}
+
+    </script>
+</body>
+</html>
